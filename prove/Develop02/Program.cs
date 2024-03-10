@@ -25,6 +25,8 @@ class Program
 
     public class JournalEntry
     {
+        internal static string txt;
+
         public string Prompt { get; set; }
         public string Entry { get; set; }
 
@@ -41,14 +43,14 @@ class Program
     }
    
 public void createJournalFile(string fileName)
-{
-    if (!File.Exists(JournalEntry.txt))
     {
+        if (File.Exists(JournalEntry.txt))
+        {
+            return;
+        }
         File.CreateText(fileName);
     }
 }
-}
-
 
 internal class TitleCaselib
 {
