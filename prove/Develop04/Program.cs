@@ -1,9 +1,26 @@
 using System;
+using System.ComponentModel.Design;
 
-class Program
+partial class Activity
 {
-    static void Main(string[] args)
+    public static void Read()
     {
-        Console.WriteLine("Hello Develop04 World!");
+        Console.WriteLine("Choose Your Activity:");
+        MenuCommand();
+        Console.WriteLine("Going to sleep for a second...");
+
+Thread.Sleep(1000);
+
+Console.WriteLine("I'm back!!");
+class ListingActivity
+{
+    public static void List()
+    {
+        Console.WriteLine("Available Activities:");
+        Console.WriteLine("1. Yoga");
+        Console.WriteLine("2. Running");
+        Console.WriteLine("3. Swimming");
     }
+    
+}
 }
