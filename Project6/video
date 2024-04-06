@@ -1,0 +1,23 @@
+using System;
+using System.ComponentModel;
+
+class Video
+{
+    public string Title { get; set; }
+    public string Description { get; set; }
+
+    public Video(string title, string description)
+    {
+        Title = title;
+        Description = description;
+    }
+}
+class Comment
+{
+    public string Text { get; set; }
+
+    public Comment(string text)
+    {
+        Text = text;
+    }
+}
