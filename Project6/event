@@ -6,3 +6,28 @@ class Event
     public string Title { get; set; }
     public string Description { get; set; }
 }
+class Lecture
+{
+    public string Subject { get; set; }
+    public DateTime Date { get; set; }
+
+    public Lecture(string subject, DateTime date)
+    {
+        Subject = subject;
+        Date = date;
+    }
+}
+class Meeting : Event
+class Reception
+{
+    public string Host { get; set; }
+    public DateTime Date
+}
+public Reception(string host, DateTime date)
+class Outdoor
+{
+    public string Location { get; set; }
+
+    public Outdoor(string location)
+}
+public class EventManager

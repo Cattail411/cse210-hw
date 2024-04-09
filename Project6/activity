@@ -6,3 +6,45 @@ class Activity
     public string Title { get; set; }
     public string Description { get; set; }
 }
+class Running
+{
+    public int Distance { get; set; }
+
+  public Running(int distance)
+}
+{
+    Distance = laps * 50 / 1000;
+}
+class Cycling
+{
+    public int Distance { get; set; }
+
+  public Cycling(int speed)
+  {
+      Distance = laps * 50 / 1000 * 0.62;
+  }
+}
+class Swimming
+{
+    public int Distance { get; set; }
+
+  public Swimming(int laps)
+  {
+      Distance = laps;
+  }
+}
+class GetSummary
+{
+    public static string GetActivitySummary(Activity activity)
+  {
+    if(activity is Running running)
+    {
+      return $"{activity.Title} - Ran {running.Distance} miles";
+    }
+    else if(activity is Cycling cycling)
+}
+Speed = (distance / minutes) * 60;
+Pace = minutes / distance;
+Speed = 60 / Pace;
+Pace = 60 / Speed;
+}
